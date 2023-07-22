@@ -21,6 +21,30 @@ namespace Calculator{
             System.Console.WriteLine($"{firstNumber}*{secondNumber}={firstNumber*secondNumber}");
             System.Console.WriteLine($"{firstNumber}/{secondNumber}={firstNumber/secondNumber}");
             System.Console.WriteLine($"{firstNumber}%{secondNumber}={firstNumber%secondNumber}");  
+
+            if(firstNumber>secondNumber)
+            {
+                Console.WriteLine("First number is greater than second");
+            }
+            
+            else if(firstNumber==secondNumber)
+            
+            {
+                Console.WriteLine("First number is equal to second number");
+            }
+            
+            else
+            {
+                Console.WriteLine("Second number is greater than first");
+            }
+
+           int userAge = Convert.ToInt32(Console.ReadLine());
+
+           if(userAge>=18 && userAge<28)
+           {System.Console.WriteLine("You are eligible to military service");}
+
+           else
+           {System.Console.WriteLine("You are not eligible to military service");}
     }
 }
 }
