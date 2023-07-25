@@ -15,32 +15,22 @@ namespace Calculator
             string operation = Console.ReadLine();
 
             System.Console.WriteLine("Converting values in progress...");
-            decimal firstNumber = Convert.ToDecimal(firstUserValue); 
+            decimal firstNumber = Convert.ToDecimal(firstUserValue);
             decimal secondNumber = Convert.ToDecimal(secondUserValue);
 
             System.Console.WriteLine("Calculating results:");
-            switch (operation)
-            {
-                case "+":
-                    System.Console.WriteLine($"{firstNumber}+{secondNumber}={firstNumber + secondNumber}");
-                    break;
-                case "-":
-                    System.Console.WriteLine($"{firstNumber}-{secondNumber}={firstNumber - secondNumber}");
-                    break;
-                case "*":
-                    System.Console.WriteLine($"{firstNumber}*{secondNumber}={firstNumber * secondNumber}");
-                    break;
-                case "/":
-                    System.Console.WriteLine($"{firstNumber}/{secondNumber}={firstNumber / secondNumber}");
-                    break;
-                case "%":
-                    System.Console.WriteLine($"{firstNumber}%{secondNumber}={firstNumber % secondNumber}");
-                    break;
-                default:
-                    System.Console.WriteLine("Unknown operation");
-                    break;
-            }
 
+            string template = $"{firstNumber} {operation} {secondNumber} =";
+            decimal result = operation switch
+            {
+                "+" => firstNumber + secondNumber,
+                "-" => firstNumber - secondNumber,
+                "*" => firstNumber * secondNumber,
+                "/" => firstNumber / secondNumber,
+                "%" => firstNumber % secondNumber,
+                _ => 0
+            };
+            System.Console.WriteLine(result);
             System.Console.WriteLine("Enter your age: ");
             int userAge = Convert.ToInt32(Console.ReadLine());
 
