@@ -1,15 +1,16 @@
 # Calculator
 
-This project shows how i can successfully use data types&amp;arithmetic operations
+In this version of release,added choosing arithmetic operations by user such as:
 
-Have a look at `Program.cs` and you can see how I have used :
+* Addition [+].
+* Subtraction [-].
+* Mupltiplication [*].
+* Division [/].
+* Remainder Calculation [%]
 
-* Console input/output
-* Conversion between data types
-* Arithmetic operations
-
+If you want to see the old version , follow the [link](https://github.com/Stryker9898/Calculator/tree/releases/v1.0) !
 
 
 ## Demo
 
-![demo](./Assets/Demo.png) 
+![demo](./Assets/Calculator_Switch.png) 
