@@ -31,14 +31,6 @@ namespace Calculator
                 _ => 0
             };
             System.Console.WriteLine(result);
-            System.Console.WriteLine("Enter your age: ");
-            int userAge = Convert.ToInt32(Console.ReadLine());
-
-            if (userAge >= 18 && userAge < 28)
-            { System.Console.WriteLine("You are eligible to military service"); }
-
-            else
-            { System.Console.WriteLine("You are not eligible to military service"); }
         }
     }
 }
